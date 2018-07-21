@@ -1,18 +1,47 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<head>
+	<meta name="description" content="Tommi Carleman is a web developer at OnlinePartners ApS. I have experience in both front-end and backend development, with tools like Wordpress and Laravel" />
+	<meta charset="utf-8">
+	<title>Tommi Carleman - Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Tommi Carleman">
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<article class="container">
+		<div class="image-area col"></div>
+
+		<div class="content-area col">
+			<div class="text-area">
+				<h1>Tommi Carleman</h1>
+
+				<p class="lead">I'm a web developer from Finland, living in Denmark, with 7 years of experience in both front-end and back-end development!</p>
+
+				<p>
+					Frontend
+				</p>
+
+				<p>
+					Throughout the years I have worked with many different systems, from CMS systems like <a href="https://wordpress.org/" rel="nofollow">WordPress</a> and <a href="https://ez.no/" rel="nofollow">eZ Publish</a>, to frameworks like <a href="https://silex.symfony.com/" rel="nofollow">Silex</a> and <a href="https://laravel.com/" rel="nofollow">Laravel</a>.
+				</p>
+
+				<p>
+					At the current time I am employed at OnlinePartners ApS as a web developer, working on both internal tools and helping out clients with different kind of issues ranging from fixing bugs on their sites to creating new solutions for them.
+				</p>
+
+				<p>
+					I've set my sights to become a full-stack developer.
+				</p>
+			</div>
+
+			<div class="links-area">
+				<a href="#">link</a>
+			</div>
+		</div>
+	</article>
+</body>
+</html>
