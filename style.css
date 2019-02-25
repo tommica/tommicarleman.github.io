@@ -3,14 +3,19 @@
 /* -- */
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
+body {
+  min-height: 100%;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-	font-family: 'Noto Serif', serif;
+	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 	line-height: 1.5;
 	font-size: 16px;
@@ -47,34 +52,14 @@ h1 {
 }
 
 @media(min-width: 768px) {
-	.col {
-		flex: 1;
-	}
-
-	.image-area {
-		height: 100vh;
-		background: url(https://placebear.com/g/1920/1920) center center no-repeat transparent;
-		background-size: cover;
-	}
-
 	.content-area {
 		padding: 30px;
-		display: flex;
-		flex-direction: column;
 	}
 
 	.container {
 		display: flex;
-	}
-
-	.text-area {
-		display: flex;
+		align-items: center;
 		justify-content: center;
-		flex: 1;
-		flex-direction: column;
-	}
-
-	.links-area {
-		flex: 0;
+		min-height: 100vh;
 	}
 }
